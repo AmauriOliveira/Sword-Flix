@@ -1,0 +1,157 @@
+{
+  "categorias": [
+    {
+      "titulo": "SwordPlay",
+      "link": "http://www.swordplay.com.br/",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Sword Play",
+        "url": "http://www.swordplay.com.br/"
+      },
+      "videos": [
+        {
+          "titulo": "Gladius Swordplay? #HipstersPontoTube",
+          "url": "https://www.youtube.com/watch?v=zmCW0tQqcn8&t=2s"
+        },
+        {
+          "titulo": "Gladius Swordplay 9 anos - Documentário",
+          "url": "https://www.youtube.com/watch?v=IgDvqiOkiI4"
+        },
+        {
+          "titulo": "Gladius Swordplay 3 anos - Vídeo Comemorativo",
+          "url": "https://www.youtube.com/watch?v=G1N8mKi_LT0"
+        },
+        {
+          "titulo": "Gladius Swordplay 8 anos - Documentário",
+          "url": "https://www.youtube.com/watch?v=CXMkotVjcRo"
+        },
+        {
+          "titulo": "Entrevista Tiago Miranda",
+          "url": "https://www.youtube.com/watch?v=vcvJw0-O27U"
+        }
+      ]
+    },
+    {
+      "titulo": "Esporte",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Esporte",
+        "url": "https://www.youtube.com/watch?v=GbyEUuBK0eQ"
+      },
+      "videos": [
+        {
+          "titulo": "O que é Swordplay? - For Honor: Batalha de Swordplay",
+          "url": "https://www.youtube.com/watch?v=GbyEUuBK0eQ"
+        },
+        {
+          "titulo": "Final do Torneio de Swordplay da Supercon Maceió 2012",
+          "url": "https://www.youtube.com/watch?v=kWoLvei15Fg"
+        },
+        {
+          "titulo": "SWORDPLAY DK BATALHA MEDIEVAL na Quinta da Boa Vista",
+          "url": "https://www.youtube.com/watch?v=ZWd8PVjdeM4"
+        },
+        {
+          "titulo": "Como fazer Espada Viking para Swordplay/Softcombat",
+          "url": "https://www.youtube.com/watch?v=zXzIlQgrDK4"
+        }
+      ]
+    },
+    {
+      "titulo": "Música",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Da boa",
+        "url": "https://www.youtube.com/watch?v=vBKBI7DOLHA"
+      },
+      "videos": [
+        {
+          "titulo": "Scotland the Brave",
+          "url": "https://www.youtube.com/watch?v=vBKBI7DOLHA"
+        },
+        {
+          "titulo": "Ode an die Freude ( Ode to Joy ) Beethoven Symphony No.9",
+          "url": "https://www.youtube.com/watch?v=kbJcQYVtZMo"
+        },
+        {
+          "titulo": "Lost Paintings - Symphony Of The Night Acoustic",
+          "url": "https://www.youtube.com/watch?v=B0nLf8ubve8"
+        }
+      ]
+    },
+    {
+      "titulo": "Filmes",
+      "cor": "orange",
+      "videos": [
+        {
+          "titulo": "Coração Valente",
+          "url": "https://www.youtube.com/watch?v=L9SDTc9UDUg"
+        },
+        {
+          "titulo": "Cruzada",
+          "url": "https://www.youtube.com/watch?v=sc7lzQQeGVI"
+        },
+        {
+          "titulo": "O Senhor dos Anéis A sociedade do Anel",
+          "url": "https://www.youtube.com/watch?v=0i86oM1nHjM"
+        },
+        {
+          "titulo": "O Hobbit: A Batalha dos Cinco Exércitos",
+          "url": "https://www.youtube.com/watch?v=VKkFW5TTB6g"
+        }
+      ]
+    },
+    {
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Steam",
+        "url": "https://store.steampowered.com/?l=portuguese"
+      },
+      "videos": [
+        {
+          "titulo": "Final Fantasy 7",
+          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+        },
+        {
+          "titulo": "Assassins Creed Valhalla",
+          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+        },
+        {
+          "titulo": "TOP 10 - Swords | 2019 | CONAN EXILES",
+          "url": "https://www.youtube.com/watch?v=M4_cYJatePo"
+        },
+        {
+          "titulo": "Shadow of Mordor Gameplay Trailer - First Gameplay",
+          "url": "https://www.youtube.com/watch?v=fpRXiyIvvX4"
+        },
+        {
+          "titulo": "Skyrim sword and shield warrior",
+          "url": "https://www.youtube.com/watch?v=juD0GsqUa0s"
+        }
+      ]
+    },
+    {
+      "titulo": "Aprendendo a fazer",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Como fazer",
+        "url": "http://www.swordplay.com.br/seguranca-e-materiais/"
+      },
+      "videos": [
+        {
+          "titulo": "Como fazer uma espada de Swordplay com LÂMINA COMPOSTA - parte 1!",
+          "url": "https://www.youtube.com/watch?v=LcWKqomkzVs"
+        },
+        {
+          "titulo": "Finalização Ponta de lança",
+          "url": "https://www.youtube.com/watch?v=tX9nd7m2hj0"
+        },
+        {
+          "titulo": "Estrutura da ponta lança",
+          "url": "https://www.youtube.com/watch?v=Js0KOMmNO6Y"
+        }
+      ]
+    }
+  ]
+}
