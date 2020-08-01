@@ -1,4 +1,5 @@
 import React from 'react';
+// import PropTypes from 'prop-types';//
 import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider';
@@ -20,9 +21,9 @@ function Carousel({
           </Title>
           {categoryExtraLink
             && (
-            <ExtraLink href={categoryExtraLink.url} target="_blank">
-              {categoryExtraLink.text}
-            </ExtraLink>
+              <ExtraLink href={categoryExtraLink.url} target="_blank">
+                {categoryExtraLink.text}
+              </ExtraLink>
             )}
         </>
       )}
@@ -46,5 +47,9 @@ function Carousel({
     </VideoCardGroupContainer>
   );
 }
+
+Carousel.prototype = {
+
+};
 
 export default Carousel;
