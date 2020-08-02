@@ -1,48 +1,58 @@
-import React from 'react';
-
-import Menu from '../../components/Menu';
-import dadosIniciais from '../../data/dados_iniciais.json';
+import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
+import PageDefault from '../../components/PageDefault';
 import Carousel from '../../components/Carousel';
-import Footer from '../../components/Footer';
+import Load from '../../components/Load';
+import categoriasRepositories from '../../repositories/categorias';
 
 function Home() {
+  const [dados, setDados] = useState([]);
+
+  useEffect(() => {
+    categoriasRepositories.getAllVideos()
+      .then((data) => {
+        console.log('====================================');
+        console.log(dados.length);
+        console.log('====================================');
+        setDados(data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
-    <div style={{ background: '#141414' }}>
-      <Menu />
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription="O que é SwordPlay?"
-      />
+    <PageDefault paddingAll={0}>
+      {dados.length === 0 && (<Load />)}
+      {/*
 
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[0]}
-      />
+      {dados.map((categoria, indice) => {
+        if (indice === 0) {
+          return (
+            <div key={categoria.id}>
+              <BannerMain
+                videoTitle={dados[0].videos[0].titulo}
+                url={dados[0].videos[0].url}
+                videoDescription={dados[0].videos[0].description}
+              />
+              <Carousel
+                ignoreFirstVideo
+                category={dados[0]}
+              />
+            </div>
+          );
+        }
 
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
+        return (
+          <Carousel
+            key={categoria.id}
+            category={categoria}
+          />
+        );
+      })} */}
 
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[3]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[4]}
-      />
-
-      <Carousel
-        category={dadosIniciais.categorias[5]}
-      />
-
-      <Footer />
-    </div>
+    </PageDefault>
   );
 }
+
 export default Home;

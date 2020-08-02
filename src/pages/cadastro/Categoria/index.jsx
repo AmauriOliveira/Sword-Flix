@@ -3,30 +3,19 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import Load from '../../../components/Load';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const initialValue = {
-    name: '',
+    title: '',
     description: '',
     color: '#000000',
   };
 
+  const { values, handleChange, cleanForm } = useForm(initialValue);
+
   const [categorias, setCategoria] = useState([]);
-  const [values, setValues] = useState(initialValue);
-
-  function setValue(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(event) {
-    setValue(
-      event.target.getAttribute('name'),
-      event.target.value,
-    );
-  }
 
   function HandleFormSubmit(event) {
     event.preventDefault();
@@ -34,7 +23,7 @@ function CadastroCategoria() {
       ...categorias,
       values,
     ]);
-    setValues(initialValue);
+    cleanForm();
   }
 
   useEffect(() => {
@@ -51,19 +40,20 @@ function CadastroCategoria() {
         });
     }, 1 * 1000);
   }, []);
+
   return (
     <PageDefault>
       <h1>
         Cadastrar Categoria:
-        {` ${values.name}`}
+        {` ${values.title}`}
       </h1>
       <form onSubmit={HandleFormSubmit}>
 
         <FormField
-          label="Nome da Categoria"
+          label="Titulo da Categoria"
           type="text"
-          name="name"
-          value={values.name}
+          name="title"
+          value={values.title}
           onChange={handleChange}
         />
 
@@ -87,15 +77,13 @@ function CadastroCategoria() {
       </form>
 
       {categorias.length === 0 && (
-        <div>
-          Loading...
-        </div>
+        <Load />
       )}
 
       <ul>
         {categorias.map((categoria) => (
           <li key={`${categoria.id}`}>
-            {categoria.name}
+            {categoria.title}
           </li>
         ))}
       </ul>

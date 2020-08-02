@@ -70,9 +70,8 @@ const Input = styled.input`
 `;
 
 function FormField({
-  label, type, name, value, onChange,
+  label, id, type, title, value, onChange,
 }) {
-  const fieldId = `id_${name}`;
   const isTextArea = type === 'textarea';
   const tag = isTextArea ? 'textarea' : 'input';
 
@@ -81,14 +80,14 @@ function FormField({
   return (
     <FormFieldWrapper>
       <Label
-        htmlFor={fieldId}
+        htmlFor={id}
       >
         <Input
           as={tag}
-          id={fieldId}
+          id={id}
           type={type}
           value={value}
-          name={name}
+          name={title}
           hasValue={hasValue}
           onChange={onChange}
        //   required="true"
@@ -110,8 +109,9 @@ FormField.defaultProps = {
 
 FormField.propTypes = {
   label: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
   type: PropTypes.string,
-  name: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
 };
