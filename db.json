@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "name": "Piadas",
+            "description": "Piadas boas",
+            "color": "#CBD1FF"
+        },
+        {
+            "id": 2,
+            "name": "Memes",
+            "description": "Melhores memes BR",
+            "color": "#CBD1FF"
+        }
+    ]
+}

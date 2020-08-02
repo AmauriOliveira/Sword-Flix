@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
@@ -8,7 +8,7 @@ function CadastroCategoria() {
   const initialValue = {
     name: '',
     description: '',
-    color: '',
+    color: '#000000',
   };
 
   const [categorias, setCategoria] = useState([]);
@@ -36,7 +36,18 @@ function CadastroCategoria() {
     ]);
     setValues(initialValue);
   }
-
+  useEffect(() => {
+    setTimeout(() => {
+      const URL = 'http://localhost:8080/categorias';
+      fetch(URL)
+        .then(async (response) => {
+          const data = await response.json();
+          setCategoria([
+            ...data,
+          ]);
+        });
+    }, 1 * 1000);
+  }, []);
   return (
     <PageDefault>
       <h1>
@@ -48,7 +59,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Nome da Categoria"
-          type="tex"
+          type="text"
           name="name"
           value={values.name}
           onChange={handleChange}
@@ -73,9 +84,15 @@ function CadastroCategoria() {
         </Button>
       </form>
 
+      {categorias.length === 0 && (
+        <div>
+          Loading...
+        </div>
+      )}
+
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
+          <li key={`${categoria.id}`}>
             {categoria.name}
           </li>
         ))}
