@@ -36,9 +36,12 @@ function CadastroCategoria() {
     ]);
     setValues(initialValue);
   }
+
   useEffect(() => {
     setTimeout(() => {
-      const URL = 'http://localhost:8080/categorias';
+      const URL = window.location.href.includes('localhost')
+        ? 'http://localhost:8080/categorias'
+        : 'https://sword-flix.herokuapp.com/categorias';
       fetch(URL)
         .then(async (response) => {
           const data = await response.json();
@@ -54,7 +57,6 @@ function CadastroCategoria() {
         Cadastrar Categoria:
         {` ${values.name}`}
       </h1>
-
       <form onSubmit={HandleFormSubmit}>
 
         <FormField
