@@ -8,9 +8,9 @@ function Carousel({
   ignoreFirstVideo,
   category,
 }) {
-  const categoryTitle = category.titulo;
-  const categoryColor = category.cor;
-  const categoryExtraLink = category.link_extra;
+  const categoryTitle = category.title;
+  const categoryColor = category.color;
+  const categoryExtraLink = category.url;
   const { videos } = category;
   return (
     <VideoCardGroupContainer>

@@ -9,22 +9,17 @@ function Home() {
   const [dados, setDados] = useState([]);
 
   useEffect(() => {
-    categoriasRepositories.getAllVideos()
+    categoriasRepositories.getAllWithVideos()
       .then((data) => {
-        console.log('====================================');
-        console.log(dados.length);
-        console.log('====================================');
         setDados(data);
       })
       .catch((err) => {
-        console.log(err.message);
       });
   }, []);
 
   return (
     <PageDefault paddingAll={0}>
       {dados.length === 0 && (<Load />)}
-      {/*
 
       {dados.map((categoria, indice) => {
         if (indice === 0) {
@@ -49,7 +44,7 @@ function Home() {
             category={categoria}
           />
         );
-      })} */}
+      })}
 
     </PageDefault>
   );

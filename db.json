@@ -4,7 +4,7 @@
             "id": 1,
             "title": "SwordPlay",
             "link": "http://www.swordplay.com.br/",
-            "cor": "#6BD1FF",
+            "color": "#6BD1FF",
             "link_extra": {
                 "text": "Sword Play",
                 "url": "http://www.swordplay.com.br/"
@@ -13,7 +13,7 @@
         {
             "id": 2,
             "title": "Esporte",
-            "cor": "#00C86F",
+            "color": "#00C86F",
             "link_extra": {
                 "text": "Esporte",
                 "url": "https://www.youtube.com/watch?v=GbyEUuBK0eQ"
@@ -22,7 +22,7 @@
         {
             "id": 3,
             "title": "Música",
-            "cor": "#9cd33b",
+            "color": "#9cd33b",
             "link_extra": {
                 "text": "Da boa",
                 "url": "https://www.youtube.com/watch?v=vBKBI7DOLHA"
@@ -31,12 +31,12 @@
         {
             "id": 4,
             "title": "Filmes",
-            "cor": "orange"
+            "color": "orange"
         },
         {
             "id": 5,
             "title": "Games",
-            "cor": "red",
+            "color": "red",
             "link_extra": {
                 "text": "Steam",
                 "url": "https://store.steampowered.com/?l=portuguese"
@@ -45,7 +45,7 @@
         {
             "id": 6,
             "title": "Aprendendo a fazer",
-            "cor": "#6b5be2",
+            "color": "#6b5be2",
             "link_extra": {
                 "text": "Como fazer",
                 "url": "http://www.swordplay.com.br/seguranca-e-materiais/"
